@@ -7,6 +7,7 @@ import time
 from PIL import ImageGrab
 import pyautogui
 
+from datetime import datetime
 
 # # Read the main image
 # img_rgb = cv2.imread('matchImage.jpg')
@@ -35,12 +36,18 @@ while(True):
         print(pt)
         pyautogui.moveTo(pt[0], pt[1], duration=1)
         pyautogui.click(pt[0], pt[1])
+        pyautogui.moveTo(200, 200, duration=1)
         time.sleep(5)
         loc = []
+        
+        now = datetime.now()
+        print(now)
+        break
 
 
     # cv2.imshow('my_screen', template)
     # press escape to exit
+    
     time.sleep(2)
     # print("test")
     if (cv2.waitKey(30) == 27):
