@@ -11,9 +11,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 # Windows (may require elevation)
 
-python -m pip install matplotlib
-pip install pyautogui
-pip install opencv-python
+python -m pip install matplotlib  
+pip install pyautogui  
+pip install opencv-python  
 pip install pyautogui
 
 # to Run script

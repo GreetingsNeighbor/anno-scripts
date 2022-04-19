@@ -41,7 +41,7 @@ while(True):
 
     # cv2.imshow('my_screen', template)
     # press escape to exit
-    # time.sleep(5)
+    time.sleep(2)
     # print("test")
     if (cv2.waitKey(30) == 27):
         break
