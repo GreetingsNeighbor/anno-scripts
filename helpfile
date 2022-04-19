@@ -1,20 +1,32 @@
-py -3 -m venv .venv
+# run the following command in cmd prompt
+
+py -3 -m venv .venv  
 .venv\scripts\activate
+
+# if you have issues you need to set policies in power shell
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 # Don't use with Anaconda distributions because they include matplotlib already.
 
-
 # Windows (may require elevation)
-python -m pip install matplotlib
-
-
-
 
 python -m pip install matplotlib
+pip install pyautogui
+pip install opencv-python
+pip install pyautogui
 
+# to Run script
+
+python imaginereg.py
+
+# to exit
+
+escape button
+control+c in terminal
+
+#deactivate from venv when you're done  
 deactivate
 
-
+#git clearing command (unrelated)  
 git rm -r --cached

@@ -39,9 +39,10 @@ while(True):
         loc = []
 
 
-    # cv2.imshow('my_screen', screen)
+    # cv2.imshow('my_screen', template)
     # press escape to exit
-    time.sleep(5)
+    # time.sleep(5)
+    # print("test")
     if (cv2.waitKey(30) == 27):
         break
 cv2.destroyAllWindows()
